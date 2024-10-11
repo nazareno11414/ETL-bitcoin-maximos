@@ -16,5 +16,11 @@ csv['Máximo'].astype(float)
 x=csv['Fecha']
 y=csv['Máximo']
 
+plot.mostrar(x,y)
 
+x = csv['Fecha'].tolist()
+y = csv['Máximo'].tolist()
+#Cargar datos en la base de datos
+bd.cargar_datos(x,y)
+#mostrarlos
 bd.mostrar_datos()
